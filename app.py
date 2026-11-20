@@ -83,13 +83,13 @@ def load_json(name):
 
 @st.cache_resource
 def load_model(file_name):
-    return joblib.load(path("models", file_name))
+    return joblib.load(path(file_name))
 
 
 @st.cache_resource
 def load_explainer(key):
     import shap
-    rf = joblib.load(path("models", f"explainer_rf_{key}.pkl"))
+    rf = joblib.load(path(f"explainer_rf_{key}.pkl"))
     return shap.TreeExplainer(rf)
 
 
@@ -184,5 +184,3 @@ if st.button("🔮 پیش‌بینی", type="primary"):
 
 st.divider()
 st.caption("این پیش‌بینی یک تخمین آماری است و جایگزین ارزیابی آموزشی نیست.")
-return joblib.load(path(file_name))
-rf = joblib.load(path(f"explainer_rf_{key}.pkl"))

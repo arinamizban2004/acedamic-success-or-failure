@@ -1,5 +1,7 @@
-joblib
 streamlit
-pandas
+joblib
 numpy
+pandas
+matplotlib
 scikit-learn
+shap

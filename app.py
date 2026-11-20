@@ -184,3 +184,5 @@ if st.button("🔮 پیش‌بینی", type="primary"):
 
 st.divider()
 st.caption("این پیش‌بینی یک تخمین آماری است و جایگزین ارزیابی آموزشی نیست.")
+return joblib.load(path(file_name))
+rf = joblib.load(path(f"explainer_rf_{key}.pkl"))

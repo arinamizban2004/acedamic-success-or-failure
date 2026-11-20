@@ -1,0 +1,26 @@
+{
+  "model": "Logistic Regression",
+  "features": [
+    "Admission grade",
+    "Previous qualification (grade)",
+    "Age at enrollment",
+    "Gender",
+    "Displaced",
+    "Scholarship holder",
+    "Debtor",
+    "Tuition fees up to date",
+    "Curricular units 1st sem (enrolled)",
+    "Curricular units 1st sem (approved)",
+    "Curricular units 1st sem (grade)"
+  ],
+  "threshold": 12.0,
+  "rows": 4243,
+  "probation_rate": 0.40820174404902193,
+  "accuracy": 0.7829399737760295,
+  "precision": 0.799487608705043,
+  "recall": 0.6253058142182095,
+  "f1": 0.7015455657777613,
+  "roc_auc": 0.8793861788159594,
+  "baseline_accuracy": 0.591798255950978,
+  "params": "{'clf__C': 10}"
+}

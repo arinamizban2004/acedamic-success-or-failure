@@ -1,0 +1,72 @@
+{
+  "A": {
+    "name": "Entry data only",
+    "features": [
+      "Admission grade",
+      "Previous qualification (grade)",
+      "Age at enrollment",
+      "Gender",
+      "Displaced",
+      "Scholarship holder"
+    ],
+    "model": "Random Forest",
+    "cv_f1": 0.7768599045444049,
+    "accuracy": 0.709366391184573,
+    "precision": 0.7421383647798742,
+    "recall": 0.8009049773755657,
+    "f1": 0.7704026115342764,
+    "roc_auc": 0.7666098400356893,
+    "params": "{'max_depth': 5, 'min_samples_leaf': 1, 'n_estimators': 300}"
+  },
+  "B": {
+    "name": "Entry + 1st semester",
+    "features": [
+      "Admission grade",
+      "Previous qualification (grade)",
+      "Age at enrollment",
+      "Gender",
+      "Displaced",
+      "Scholarship holder",
+      "Debtor",
+      "Tuition fees up to date",
+      "Curricular units 1st sem (enrolled)",
+      "Curricular units 1st sem (approved)",
+      "Curricular units 1st sem (grade)"
+    ],
+    "model": "SVM",
+    "cv_f1": 0.9092333910688586,
+    "accuracy": 0.8953168044077136,
+    "precision": 0.88125,
+    "recall": 0.9570135746606335,
+    "f1": 0.9175704989154013,
+    "roc_auc": 0.9261678669300873,
+    "params": "{'clf__estimator__C': 1, 'clf__estimator__kernel': 'rbf'}"
+  },
+  "C": {
+    "name": "Entry + 1st and 2nd semester",
+    "features": [
+      "Admission grade",
+      "Previous qualification (grade)",
+      "Age at enrollment",
+      "Gender",
+      "Displaced",
+      "Scholarship holder",
+      "Debtor",
+      "Tuition fees up to date",
+      "Curricular units 1st sem (enrolled)",
+      "Curricular units 1st sem (approved)",
+      "Curricular units 1st sem (grade)",
+      "Curricular units 2nd sem (enrolled)",
+      "Curricular units 2nd sem (approved)",
+      "Curricular units 2nd sem (grade)"
+    ],
+    "model": "SVM",
+    "cv_f1": 0.9260490017813534,
+    "accuracy": 0.9173553719008265,
+    "precision": 0.899581589958159,
+    "recall": 0.9728506787330317,
+    "f1": 0.9347826086956522,
+    "roc_auc": 0.9531180294436301,
+    "params": "{'clf__estimator__C': 1, 'clf__estimator__kernel': 'linear'}"
+  }
+}
